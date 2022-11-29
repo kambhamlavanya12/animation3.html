@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{ 
+            height: 100vh; 
+            width: 100%;
+            border: 2px solid red;
+            background-image: url(https://img.freepik.com/premium-photo/pastel-colour-feather-abstract-background_66899-1263.jpg?size=626&ext=jpg&ga=GA1.2.1341800649.1667235695);
+            background-size: cover;
+       }
+        .ball{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background:radial-gradient(rgb(79, 211, 79),yellow,red);
+        }
+        .bounce{
+            animation: bounce 6s linear infinite;
+        }
+        @keyframes bounce
+        {
+            0% {top: 50%;left: 0%;}
+            25% {top: 0%;left: 50%;}
+            50% {top: 50%;left: 96%;}
+            75% {top: 92%;left: 55%;}
+            100%{top: 50%;left: 0px;} 
+        }
+    </style>
+</head>
+<body>
+    <div class="bounce">
+        <div class="ball bounce"></div>
+    </div>
+</body>
+</html>
